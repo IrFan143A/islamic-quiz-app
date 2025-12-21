@@ -10,7 +10,25 @@ const questionBank = {
       question: "Which is the first pillar of Islam?",
       options: ["Salah", "Shahada", "Zakat", "Hajj"],
       correct: 1,
-      explanation: "Shahada is the declaration of faith and the first pillar of Islam."
+      explanation: "Shahada is the declaration of faith."
+    },
+    {
+      question: "Which pillar involves fasting?",
+      options: ["Zakat", "Hajj", "Sawm", "Salah"],
+      correct: 2,
+      explanation: "Sawm means fasting during the month of Ramadan."
+    },
+    {
+      question: "Which pillar is obligatory once in a lifetime if able?",
+      options: ["Zakat", "Hajj", "Salah", "Shahada"],
+      correct: 1,
+      explanation: "Hajj is obligatory once in a lifetime if physically and financially able."
+    },
+    {
+      question: "How many daily prayers are obligatory?",
+      options: ["3", "4", "5", "6"],
+      correct: 2,
+      explanation: "There are five obligatory daily prayers."
     }
   ],
 
@@ -19,13 +37,31 @@ const questionBank = {
       question: "Who was the first prophet?",
       options: ["Muhammad ﷺ", "Ibrahim (AS)", "Adam (AS)", "Nuh (AS)"],
       correct: 2,
-      explanation: "Prophet Adam (AS) was the first prophet and first human."
+      explanation: "Prophet Adam (AS) was the first prophet."
     },
     {
       question: "Which prophet built the Kaaba?",
       options: ["Isa (AS)", "Musa (AS)", "Ibrahim (AS)", "Muhammad ﷺ"],
       correct: 2,
-      explanation: "Prophet Ibrahim (AS) built the Kaaba with Ismail (AS)."
+      explanation: "Prophet Ibrahim (AS) built the Kaaba."
+    },
+    {
+      question: "Who was the last prophet?",
+      options: ["Isa (AS)", "Muhammad ﷺ", "Musa (AS)", "Nuh (AS)"],
+      correct: 1,
+      explanation: "Prophet Muhammad ﷺ is the last prophet."
+    },
+    {
+      question: "Which prophet was swallowed by a whale?",
+      options: ["Yunus (AS)", "Ayyub (AS)", "Yusuf (AS)", "Hud (AS)"],
+      correct: 0,
+      explanation: "Prophet Yunus (AS) was swallowed by a whale."
+    },
+    {
+      question: "Which prophet could interpret dreams?",
+      options: ["Yusuf (AS)", "Isa (AS)", "Musa (AS)", "Ibrahim (AS)"],
+      correct: 0,
+      explanation: "Prophet Yusuf (AS) was known for dream interpretation."
     }
   ],
 
@@ -34,16 +70,68 @@ const questionBank = {
       question: "How many Surahs are in the Quran?",
       options: ["114", "120", "100", "99"],
       correct: 0,
-      explanation: "The Quran contains 114 Surahs."
+      explanation: "The Quran has 114 Surahs."
     },
     {
       question: "Which is the first Surah of the Quran?",
       options: ["Al-Baqarah", "Al-Fatihah", "An-Nas", "Al-Ikhlas"],
       correct: 1,
-      explanation: "Surah Al-Fatihah is the first Surah of the Quran."
+      explanation: "Al-Fatihah is the first Surah."
+    },
+    {
+      question: "Which Surah is the longest?",
+      options: ["Al-Fatihah", "Al-Baqarah", "Al-Imran", "An-Nisa"],
+      correct: 1,
+      explanation: "Surah Al-Baqarah is the longest Surah."
+    },
+    {
+      question: "Which Surah is called the heart of the Quran?",
+      options: ["Ya-Sin", "Ar-Rahman", "Al-Ikhlas", "Al-Kahf"],
+      correct: 0,
+      explanation: "Surah Ya-Sin is known as the heart of the Quran."
+    },
+    {
+      question: "In which language was the Quran revealed?",
+      options: ["Urdu", "Persian", "Arabic", "Hebrew"],
+      correct: 2,
+      explanation: "The Quran was revealed in Arabic."
+    }
+  ],
+
+  history: [
+    {
+      question: "In which year did Hijrah occur?",
+      options: ["610 AD", "622 AD", "630 AD", "632 AD"],
+      correct: 1,
+      explanation: "Hijrah took place in 622 AD."
+    },
+    {
+      question: "Which city was the first capital of Islam?",
+      options: ["Makkah", "Madinah", "Jerusalem", "Kufa"],
+      correct: 1,
+      explanation: "Madinah was the first capital of the Islamic state."
+    },
+    {
+      question: "Who was the first Caliph of Islam?",
+      options: ["Umar (RA)", "Ali (RA)", "Abu Bakr (RA)", "Usman (RA)"],
+      correct: 2,
+      explanation: "Hazrat Abu Bakr (RA) was the first Caliph."
+    },
+    {
+      question: "Which battle was the first battle in Islam?",
+      options: ["Uhud", "Badr", "Khandaq", "Hunain"],
+      correct: 1,
+      explanation: "Battle of Badr was the first battle in Islam."
+    },
+    {
+      question: "When was Makkah conquered?",
+      options: ["6 AH", "7 AH", "8 AH", "9 AH"],
+      correct: 2,
+      explanation: "Makkah was conquered in 8 AH."
     }
   ]
 };
+
 
 let selectedCategory = "";
 let questions = [];
@@ -179,3 +267,4 @@ newCategoryBtn.addEventListener("click", () => {
   selectedCategory = "";
   categoryBtns.forEach(b => b.classList.remove("active"));
 });
+
