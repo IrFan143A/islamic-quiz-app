@@ -10,20 +10,20 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.section {
-  padding: 80px 20px;
+.page {
+  display: none;
   text-align: center;
+  padding: 50px;
 }
 
-.section h1 {
-  margin-bottom: 15px;
+.page h1 {
   color: #2c5f2d;
 }
 
-.section p, .section li {
-  font-size: 18px;
-  line-height: 1.6;
-  list-style: none;
+#home {
+  display: block; /* Home visible by default */
+}
+
 }
 html {
   scroll-behavior: smooth;
@@ -190,4 +190,5 @@ html {
   gap: 20px;
 
 }
+
 
