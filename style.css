@@ -6,10 +6,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  min-height: 100vh;
-  color: #333;
+    background-image: url("images/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
 .navbar {
   display: flex;
@@ -169,4 +170,5 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+
 }
