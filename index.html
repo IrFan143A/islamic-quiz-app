@@ -100,7 +100,19 @@
 </div>
 
 <script src="script.js"></script>
+  <script>
+  function showSection(sectionId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+      page.style.display = 'none';
+    });
+
+    document.getElementById(sectionId).style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
+
 
 
