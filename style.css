@@ -19,6 +19,10 @@ body {
 .page h1 {
   color: #2c5f2d;
 }
+.page h1, .page p, .page li {
+  color: white;
+}
+
 
 #home {
   display: block; /* Home visible by default */
@@ -190,5 +194,6 @@ html {
   gap: 20px;
 
 }
+
 
 
