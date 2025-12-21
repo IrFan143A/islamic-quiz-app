@@ -197,6 +197,12 @@ html {
   gap: 20px;
 
 }
+.page h1,
+.page h2,
+.page h3 {
+  color: white !important;
+}
+
 
 
 
