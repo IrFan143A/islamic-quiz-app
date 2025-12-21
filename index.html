@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Knowledge Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><i class="fa-solid fa-mosque"></i> Islamic Quiz</div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+  </ul>
+</nav>
+
+<div class="container" id="app-container">
+  <section id="welcome-screen" class="card center">
+    <h1>Islamic Knowledge Quiz</h1>
+    <p>Test your knowledge about Islam, Quran & Prophets</p>
+
+    <div class="categories">
+      <button class="category-btn" data-category="pillars">Pillars of Islam</button>
+      <button class="category-btn" data-category="prophets">Prophets</button>
+      <button class="category-btn" data-category="quran">Quran</button>
+    </div>
+
+    <button id="start-btn" class="primary-btn" disabled>Start Quiz</button>
+  </section>
+  <section id="quiz-screen" class="card hidden">
+    <div class="quiz-header">
+      <h3 id="current-category"></h3>
+      <span id="progress-text"></span>
+    </div>
+
+    <div class="progress">
+      <div id="progress-bar"></div>
+    </div>
+
+    <h2 id="question-text"></h2>
+
+    <div id="options-container"></div>
+
+    <div id="explanation-container" class="hidden">
+      <p><strong>Explanation:</strong> <span id="explanation-text"></span></p>
+    </div>
+
+    <button id="next-btn" class="primary-btn hidden">Next</button>
+  </section>
+
+  <section id="results-screen" class="card center hidden">
+    <h2>Quiz Completed</h2>
+
+    <div class="score-circle" id="score-percentage">0%</div>
+    <h3><span id="final-score"></span>/<span id="total-questions"></span></h3>
+
+    <div id="high-score-alert" class="success hidden">New High Score!</div>
+
+    <div class="result-buttons">
+      <button id="retry-btn" class="primary-btn">Retry</button>
+      <button id="new-category-btn" class="secondary-btn">New Category</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
