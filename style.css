@@ -15,6 +15,11 @@ body {
   text-align: center;
   padding: 50px;
 }
+.page h1,
+.page p,
+.page li {
+  color: white;
+}
 
 .page h1 {
   color: #2c5f2d;
@@ -197,6 +202,7 @@ html {
   gap: 20px;
 
 }
+
 
 
 
