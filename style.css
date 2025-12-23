@@ -16,11 +16,6 @@ body {
   padding: 50px;
 }
 }
-.page h1,
-.page p,
-.page li {
-  color: white;
-}
 
 #home {
   display: block; /* Home visible by default */
@@ -191,12 +186,14 @@ html {
   justify-content: center;
   gap: 20px;
 
-}
 .page h1,
 .page h2,
-.page h3 {
+.page h3,
+.page p,
+.page li {
   color: white !important;
 }
+
 
 
 
