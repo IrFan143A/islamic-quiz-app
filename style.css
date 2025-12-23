@@ -15,7 +15,12 @@ body {
   text-align: center;
   padding: 50px;
 }
-
+}
+.page h1,
+.page p,
+.page li {
+  color: white;
+}
 
 #home {
   display: block; /* Home visible by default */
@@ -192,6 +197,7 @@ html {
 .page h3 {
   color: white !important;
 }
+
 
 
 
