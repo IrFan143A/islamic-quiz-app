@@ -79,7 +79,7 @@ html {
 }
 
 .primary-btn {
-  background: #667eea;
+  background: #000;
   color: #fff;
   border: none;
   padding: 12px 30px;
@@ -193,6 +193,7 @@ html {
 .page li {
   color: white !important;
 }
+
 
 
 
