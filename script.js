@@ -131,6 +131,7 @@ const questionBank = {
     }
   ]
 };
+let highScore = localStorage.getItem("islamicQuizHighScore") || 0;
 
 
 let selectedCategory = "";
@@ -246,7 +247,19 @@ function endQuiz() {
 
   const percent = Math.round((score / questions.length) * 100);
   scorePercentage.textContent = percent + "%";
+
+  const highScoreAlert = document.getElementById("high-score-alert");
+
+  // Check & save high score
+  if (percent > highScore) {
+    highScore = percent;
+    localStorage.setItem("islamicQuizHighScore", highScore);
+    highScoreAlert.classList.remove("hidden");
+  } else {
+    highScoreAlert.classList.add("hidden");
+  }
 }
+
 
 retryBtn.addEventListener("click", () => {
   resultsScreen.classList.add("hidden");
@@ -267,4 +280,7 @@ newCategoryBtn.addEventListener("click", () => {
   selectedCategory = "";
   categoryBtns.forEach(b => b.classList.remove("active"));
 });
+document.getElementById("stored-high-score").textContent =
+  highScore + "%";
+
 
