@@ -15,23 +15,13 @@ body {
   text-align: center;
   padding: 50px;
 }
-.page h1,
-.page p,
-.page li {
-  color: white;
-}
-
-.page h1 {
-  color: #2c5f2d;
-}
-
 
 
 #home {
   display: block; /* Home visible by default */
 }
 
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -202,6 +192,7 @@ html {
 .page h3 {
   color: white !important;
 }
+
 
 
 
